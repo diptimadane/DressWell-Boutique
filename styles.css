@@ -1,0 +1,181 @@
+header,footer,
+article,section,
+hgroup,nav,
+figure{
+	display:block;
+}
+
+
+footer .line{
+	margin:22em 0;
+}
+
+nav{
+	background:url(img/images21.jpg) repeat-x 0% 0% #f8f8f8;
+	padding:0 5px;
+	position:absolute;
+	right:0;
+	top:2em;
+	height: 15%; 
+    width: 80%;
+	border:1px solid #FCFCFC;
+	-moz-box-shadow:0 1px 1px #333333;
+	-webkit-box-shadow:0 1px 1px #333333;
+	box-shadow:0 1px 1px #333333;
+}
+
+nav ul li{
+	display:inline;
+}
+
+nav ul li a,
+nav ul li a:visited{
+	color:#FFFFFF;
+	display:block;
+	float:left;
+	font-size:1em;
+	font-weight:bold;
+	margin:20px 2px 2px 45px;
+	padding:7px 10px 4px;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	text-transform:uppercase;
+}
+
+nav ul li a:hover{
+	text-decoration:none;
+	background-color:#f0f0f0;
+}
+
+nav, article, nav ul li a,figure{
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	border-radius:10px;
+}
+
+article
+#page{
+	width:500px;
+	margin:0 auto;
+	position:relative;
+}
+
+article{
+	border-radius:10px;
+    margin:3em 0 0em 1em;
+	padding:20px;
+	border:1px solid #02023c;
+	text-shadow:0 2px 0 white;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	height:400px;
+
+}
+
+article.articleinside{
+	background-color:#FFFFFF;
+	margin:3em 0 0em 1em;
+	padding:20px;
+	text-shadow:0 0px 0 blue;
+	font-family: Copperplate, 'Copperplate Gothic Light', fantasy;
+	font-size: 20px;
+	height:400px;
+}
+
+article.articleinsideWorkflow{
+	background-color:#FFFFFF;
+	margin:3em 0 0em 1em;
+	padding:20px;
+	text-shadow:0 0px 0 blue;
+	font-family: Copperplate, 'Copperplate Gothic Light', fantasy;
+	font-size: 20px;
+	height:600px;
+}
+
+article.articleinsideTest{
+	background-color:#FFFFFF;
+	margin:3em 0 0em 1em;
+	padding:20px;
+	text-shadow:0 0px 0 blue;
+	font-family: Copperplate, 'Copperplate Gothic Light', fantasy;
+	font-size: 20px;
+	height:660px;
+}
+
+div.testimonials{
+	font-family: 'Segoe UI', Frutiger, 'Frutiger Linotype', 'Dejavu Sans', 'Helvetica Neue', Arial, sans-serif;
+	font-size: 14px;
+}
+
+figure{
+	border:3px solid #142830;
+	float:right;
+	height:300px;
+	margin-left:15px;
+	overflow:hidden;
+	width:500px;
+}
+
+.container{
+	width:1000px;
+	margin:30px auto 0;
+}
+
+.tooltip:hover:before{
+content: attr(data-tip) ; 
+    color:#42517f;
+    padding:0px 7px;
+   font-weight:bold;
+    border-width: 6px 6px 0 6px;
+    bottom: 470px;
+     left: 40%;
+    position: absolute;
+    z-index: 99;
+	 font-size: 35px;
+	     white-space:nowrap;
+}
+
+
+ 
+
+header h3{
+color:#ffffff;
+text-align:center;
+padding-top:3px;
+padding-bottom:3px;
+font-size:16px;
+word-spacing:1px;
+text-shadow: 1px 1px 2px #000000;	
+}
+
+#content{
+	padding-top:30px;
+	padding-bottom:30px;
+	overflow:hidden;
+	}
+
+.gallery{
+	width:1000px;
+	margin:auto;
+}
+
+
+.gallery ul{
+	list-style:none;
+}
+
+.gallery li{
+	float:left;
+	margin:10px;
+}
+
+.gallery img{
+	display:block;
+	padding:5px;
+	background:#42517f;
+	border: 1px solid #99adeb;
+	box-shadow: 1px 1px 2px #000000;	
+}
+
+.gallery img:hover{
+	border: 1px solid #ffffff;
+}
+}
