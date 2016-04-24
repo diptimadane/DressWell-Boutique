@@ -1,1 +1,0 @@
-JAVASCRIPT in Products(html) and ViewProduct(html)
