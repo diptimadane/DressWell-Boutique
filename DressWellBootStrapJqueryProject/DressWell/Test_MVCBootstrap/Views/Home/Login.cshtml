@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#btnLogin").click(function () {
+             
+                if ($("#inputSuccess").val() == "")
+                {
+                    alert("Please enter username");
+                } else if ($("#inputWarning").val() == "") {
+                    alert("Please enter password");
+                } else {
+                    alert("Login Successful ! Please Continue....");
+                }
+            });
+        });
+    </script>
+    @{
+        ViewBag.Title = "Login";
+    }
+</head>
+<body>
+    <h2>Login</h2>
+
+    <br />
+
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+
+
+
+    <form class="form-horizontal">
+        <div id="loginForm">
+            <div class="form-group has-error">
+                <label class="col-xs-2 control-label" for="inputSuccess">Username</label>
+                <div class="col-xs-10">
+                    <input type="text" id="inputSuccess" class="form-control">
+                    <span class="help-block">Username is email id</span>
+                </div>
+            </div>
+            <div class="form-group has-warning">
+                <label class="col-xs-2 control-label" for="inputWarning">Password</label>
+                <div class="col-xs-10">
+                    <input type="password" id="inputWarning" class="form-control">
+                </div>
+            </div>
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+            <button id="btnLogin" class="btn-primary">Login</button>
+        </div>
+    </form>
+</body>
+</html>

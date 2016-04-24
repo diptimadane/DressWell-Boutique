@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#customerTable").hide();
+            $("#btnShow").click(function () {
+                if ($("#test3").val() == "") {
+                    alert("Please enter customer id");
+                } else {
+                    $("#customerTable").show();
+                }
+    });
+    $("#btnClear").click(function () {
+        $("#customerTable").hide();
+    });
+});
+    </script>
+</head>
+<body>
+
+    <br /><br />
+    <center>
+        <p class="input-lg">
+            Customer Id: <input type="text" id="test3">
+            <button id="btnShow">Search</button>&nbsp;&nbsp;<button id="btnClear">Clear</button>
+    </center>
+
+    <div id="customerTable">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th class="table-bordered">Name</th>
+                    <th class="table-bordered">Address</th>
+                    <th class="table-bordered">Gender</th>
+                    <th class="table-bordered">No. of Prev Orders.</th>
+                    <th class="table-bordered">Last Order Date</th>
+                    <th class="table-bordered">Default Style</th>
+                    <th class="table-bordered">Preferred time for Delivery</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="danger">
+                    <td class="table-bordered">Prachi arora</td>
+                    <td class="table-bordered">2009,Happy street, Fun Road, Texas, USA 177009</td>
+                    <td class="table-bordered">Female</td>
+                    <td class="table-bordered">8</td>
+                    <td class="table-bordered">02-07-2015</td>
+                    <td class="table-bordered">Women's Formals</td>
+                    <td class="table-bordered">5.00 pm to 10.00 pm</td>
+                </tr>
+               
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

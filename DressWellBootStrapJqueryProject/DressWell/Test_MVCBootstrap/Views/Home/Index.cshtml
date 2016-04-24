@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+    <script src="~/Scripts/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+        $("#btnRedirect1").click(function () {
+     
+            window.location = "@Url.Action("Login","Home")";
+        });
+    });
+    </script>
+</head>
+<body>
+    <br />
+    <div class="jumbotron">
+        <h1>Welcome to DressWell</h1>
+        <p class="lead">A one stop solution to all your fashion needs !</p>
+        <p><input type="button" id="btnRedirect1" class="btn btn-primary btn-large" value="Login Here" /></p>
+</div>
+</body>
+</html>
